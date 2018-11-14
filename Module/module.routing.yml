@@ -1,0 +1,7 @@
+playlist_block.favourites_page:
+  path: 'Module'
+  defaults:
+    _controller: '\Drupal\Module\Controller\FavouritesPage::PageController'
+    _title: 'My Favourites Series'
+  requirements:
+    _permission: 'access content' 

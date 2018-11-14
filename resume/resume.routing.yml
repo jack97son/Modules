@@ -1,0 +1,31 @@
+playlist_block.favourites_page:
+  path: 'favourites'
+  defaults:
+    _controller: '\Drupal\resume\Controller\FavouritesPage::PageController'
+    _title: 'My Favourites Series'
+  requirements:
+    _permission: 'acceso' 
+
+resume.form:
+ path: '/resume/myform'
+ defaults:
+   _title: 'Application form'
+   _form: '\Drupal\resume\Form\ResumeForm'
+ requirements:
+   _permission: 'access content'
+
+resume.form:
+  path: 'resume/mypage'
+  defaults:
+    _form: '\Drupal\resume\Form\WorkForm'
+    _title: 'D8 form'
+  requirements:
+    _permission: 'access content'
+
+favorite_list.remove_form:
+ path: 'user/favourites/{nid}/remove'
+ defaults:
+   _form: '\Drupal\resume\form\RemoveForm'
+   _title: 'RemoveForm'
+ requirements:
+   _permission: 'acceso'

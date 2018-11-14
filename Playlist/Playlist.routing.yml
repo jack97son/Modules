@@ -1,0 +1,23 @@
+playlist_block.favourites_page:
+  path: 'favourites'
+  defaults:
+    _controller: '\Drupal\Playlist\Controller\FavouritesPage::PageController'
+    _title: 'My Favourites Series'
+  requirements:
+    _permission: 'access content' 
+
+Playlist.form:
+ path: '/Playlist/myform'
+ defaults:
+   _title: 'Application form'
+   _form: '\Drupal\Playlist\Form\PlaylistForm'
+ requirements:
+   _permission: 'access content'
+
+Playlist.form:
+  path: 'Playlist/mypage'
+  defaults:
+    _form: '\Drupal\Playlist\Form\WorkForm'
+    _title: 'D8 form'
+  requirements:
+    _permission: 'access content'
